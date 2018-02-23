@@ -1,0 +1,18 @@
+SET doeasymath = $1 * $2; 				// RowNo() * RowNo()
+SET okhardmath = $1 * $(doeasymath); 	// 3 * the result of doeasymath
+
+SET color_background = Pick($1,
+	lightred(),
+    lightblue(),
+    lightgreen()
+);
+
+SET color_text = Pick($1,
+	red(),
+    white(),
+    green()
+);
+
+
+SET doeasymath = $1 * $2; 				
+SET okhardmath = $1 * $(doeasymath);
